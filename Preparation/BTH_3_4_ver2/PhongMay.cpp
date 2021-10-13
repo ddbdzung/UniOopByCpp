@@ -1,65 +1,6 @@
-#include <iostream>
+#include "May.cpp"
+#include "QuanLy.cpp"
 #include <iomanip>
-
-using namespace std;
-
-class May{
-private:
-    string maMay;
-    string kieuMay;
-    string tinhTrang;
-public:
-    string getMaMay() {
-    	return this->maMay;
-    }
-    string getKieuMay() {
-    	return this->kieuMay;
-    }
-    string getTinhTrang() {
-    	return this->tinhTrang;
-    }
-    void nhap();
-    void xuat();
-    virtual ~May() {}
-};
-
-void May::nhap() {
-    cout << "Nhap ma may: ";    fflush(stdin);  getline(cin, maMay);
-    cout << "Nhap kieu may: ";    fflush(stdin);  getline(cin, kieuMay);
-    cout << "Nhap tinh trang: ";    fflush(stdin);  getline(cin, tinhTrang);
-}
-
-void May::xuat() {
-    cout << "Ma may: " << maMay << endl;
-    cout << "Kieu may: " << kieuMay << endl;
-    cout << "Tinh trang: " << tinhTrang << endl;
-}
-
-class QuanLy {
-private:
-    string maql;
-    string hoTen;
-public:
-    string getMaql() {
-    	return this->maql;
-    }
-    string getHoTen() {
-    	return this->hoTen;
-    }
-    void nhap();
-    void xuat();
-    virtual ~QuanLy() {}
-};
-
-void QuanLy::nhap() {
-    cout << "Nhap ma quan ly: ";    fflush(stdin);  getline(cin, maql);
-    cout << "Nhap ho ten: ";    fflush(stdin);  getline(cin, hoTen);
-}
-
-void QuanLy::xuat() {
-    cout << "Ma quan ly: " << maql << endl;
-    cout << "Ho ten: " << hoTen << endl;
-}
 
 class PhongMay {
 private:
@@ -109,14 +50,4 @@ void PhongMay::xuat() {
         cout << setw(15) << left << y[i].getKieuMay(); 
         cout << setw(10) << right << y[i].getTinhTrang() << endl; 
     }
-}
-
-int main() {
-
-    PhongMay a;
-    a.nhap();
-    cout << "\n\n";
-    a.xuat();
-
-    return 0;
 }
