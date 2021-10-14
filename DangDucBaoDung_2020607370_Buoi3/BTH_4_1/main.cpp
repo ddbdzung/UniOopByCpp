@@ -10,7 +10,7 @@ private:
     double diemToan;
     double diemLy;
     double diemHoa;
-public: 
+public:
     SinhVien() {}
     void nhap();
     void xuat();
