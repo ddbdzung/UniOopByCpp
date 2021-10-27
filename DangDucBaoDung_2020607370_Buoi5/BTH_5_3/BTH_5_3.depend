@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1635351456 source:d:\my drive\university\sophomore\training\oop\temp\bth_5_3\main.cpp
+	<iostream>
+	<sstream>
+	<string>
+	<malloc.h>
+	<iomanip>
+
